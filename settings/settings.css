@@ -1,0 +1,60 @@
+ul {
+  list-style: none;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+/* .content-wrapper {
+  display: flex;
+} */
+
+.settings-content {
+  display: flex;
+  max-height: 50%;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100rem;
+  height: 50rem;
+  align-items: center;
+  padding-left: 10rem;
+}
+
+.form-wrapper h3 {
+  align-self: start;
+}
+
+.form-wrapper p {
+  align-self: start;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.literally-for-margin {
+  margin-top: 1rem;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+form button {
+  max-width: 10rem;
+  align-self: flex-end;
+}
