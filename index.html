@@ -5,13 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pluto5</title>
+    <script src="https://kit.fontawesome.com/380ad8a69c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h2>hello</h2>
-    
-
-    <h1>hi</h1>
+    <header>
+        <h1>Share Notes</h1>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-user"></i></li>
+                <li><i class="fa-solid fa-house"></i></li>
+                <li><i class="fa-solid fa-message"></i></li>
+                <li><i class="fa-solid fa-pen-to-square"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="aside-left">
+            <label for="filterCategory">Filter by Category:</label><br>
+            <select id="filterCategory">
+                <option value="subject">Subject</option>
+                <option value="Date">Date</option>
+                <option value="popular">Popular</option>
+                <option value="Instructor">Instructor</option>
+            </select>
+        </aside>
+        <div class="container">
+            <div class="profile-picture">
+                <img src="./photo/pexels-olly-774909.jpg" alt="Profile Picture">
+                <p>Elara Davis</p>
+            </div>
+        
+            <div class="form-container">
+                <h2>Post Your Note</h2>
+                <form action="/submit-note" method="POST">
+                    <label for="title">Note Title:</label>
+                    <input type="text" id="title" name="title" required>
+        
+                    <label for="content">Note Content:</label>
+                    <textarea id="content" name="content" required></textarea>
+        
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="">Select a category</option>
+                        <option value="agile">Agile</option>
+                        <option value="ux/ui">UX/UI</option>
+                        <option value="OOP">Object Oriented Programming</option>
+                        <option value="WebDev">Web Development 2</option>
+                        <option value="Comm">Business Communication</option>
+                        <option value="DB">Database</option>
+                    </select>
+        
+                    <input type="submit" value="Post Note">
+                </form>
+            </div>
+            <div class="shared-container">
+                <h2>Shared Notes</h2>
+                <article>
+                    <h3>Note 1</h3>
+                    <p>This is the content of the first shared note.</p>
+                    <p><strong>Category:</strong> Database</p>
+                </article>
+                <article>
+                    <h3>Note 2</h3>
+                    <p>This is the content of the second shared note.</p>
+                    <p><strong>Category:</strong> Web Development</p>
+                </article>
+                <article>
+                    <h3>Note 3</h3>
+                    <p>This is the content of the third shared note.</p>
+                    <p><strong>Category:</strong> UX/UI</p>
+                </article>
+                <article>
+                    <h3>Note 4</h3>
+                    <p>This is the content of the fourth shared note.</p>
+                    <p><strong>Category:</strong> UX/UI</p>
+                </article>
+            </div>
+        </div>
+        <aside class="aside-right">
+            <label for="filterCategory">Filter by Category:</label><br>
+            <select id="filterCategory">
+                <option value="subject">Subject</option>
+                <option value="Date">Date</option>
+                <option value="popular">Popular</option>
+                <option value="Instructor">Instructor</option>
+            </select>
+        </aside>
+    </main>
+    <footer>
+        <ul>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+            <li>Feedback</li>
+            <li>Support</li>
+            <li>About Us</li>
+            <li>Social Media</li>
+        </ul>
+    </footer>
 </body>
 
 </html>
