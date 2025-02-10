@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background-color: lightgoldenrodyellow;
+}
+
+.logo {
+    width: 50px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem auto;
+    max-width: 60%;
+}
+
+.app-logo {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    display: inline-block;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+header li{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+aside {
+    margin: 1rem;
+    background-color: white;
+    padding: 1rem;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.classmate-profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.classmates-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.classmates-list li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.classes {
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+.class-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.classes h2, .contributions h2, .borrowed-notes h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.class-card {
+    width: 200px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+.contributions, .borrowed-notes{
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+.contribution, .borrowed {
+    background-color: lightgoldenrodyellow;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-code {
+    background-color: rgba(211, 211, 211, 0.439);
+    padding: 0.1rem;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+}
+
+footer {
+    background-color: white;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer li {
+    display: inline-block;
+    text-align: center;
+    margin: 0.5rem 0;
+}
