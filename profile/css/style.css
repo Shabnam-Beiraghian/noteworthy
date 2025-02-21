@@ -142,3 +142,7 @@ footer li {
     text-align: center;
     margin: 0.5rem 0;
 }
+
+.fa-solid {
+    color: black;
+}
