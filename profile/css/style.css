@@ -115,7 +115,7 @@ aside {
 }
 
 .class-code {
-    background-color: rgba(211, 211, 211, 0.439);
+    background-color: rgba(233, 173, 83, 0.439);
     padding: 0.1rem;
     border-radius: 5px;
     margin-left: 0.5rem;
@@ -124,9 +124,9 @@ aside {
 footer {
     background-color: white;
     margin: 0;
-    position: fixed;
     bottom: 0;
     width: 100vw;
+    padding: 1rem 0;
 }
 
 footer ul {
@@ -134,10 +134,15 @@ footer ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 0;
 }
 
 footer li {
     display: inline-block;
     text-align: center;
     margin: 0.5rem 0;
+}
+
+.fa-solid {
+    color: black;
 }
