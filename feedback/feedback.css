@@ -13,9 +13,29 @@ body {
   }
   
   body {
-    display: flex;
+    /* display: flex; */
     margin: 0;
   }
+
+  .logo {
+    width: 50px;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.app-logo li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
   
   
 .contact {
